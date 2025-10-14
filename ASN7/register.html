@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>G0ose1285 | Honkamania '25</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Honkamania '25 Registration</h1>
+    <p class="tagline">Whatcha gonna do when Honk Hogan and the Goose-amaniacs fly wild?</p>
+  </header>
+
+  <nav aria-label="Primary" class="site-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a class="active" aria-current="page" href="register.html">Register</a></li>
+    </ul>
+  </nav>
+
+  <main id="content">
+    <section>
+      <h2>Register for Honkamania ’25</h2>
+      <p>Complete the form below to secure your spot in the loudest event of the century. Fields marked with * are required.</p>
+
+      <form class="register" action="https://formspree.io/f/myzkjveq" method="POST">
+        <div>
+          <label for="fullName">Full name *</label>
+          <input type="text" id="fullName" name="fullName" placeholder="e.g., Honk Hogan" required>
+        </div>
+
+        <div>
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" placeholder="you@pondmail.com" required>
+        </div>
+
+        <div>
+          <label for="password">Secret honk-code *</label>
+          <input type="password" id="password" name="password" minlength="6" placeholder="At least 6 characters" required>
+        </div>
+
+        <div>
+          <label for="avatar">Upload your battle plumage (photo)</label>
+          <input type="file" id="avatar" name="avatar" accept="image/*">
+        </div>
+
+        <div>
+          <label for="favColor">Preferred feather color</label>
+          <input type="color" id="favColor" name="favColor" value="#5500ff">
+        </div>
+
+        <div>
+          <label for="hype">Honk power level</label>
+          <input type="range" id="hype" name="hype" min="0" max="100" value="50">
+        </div>
+
+        <fieldset>
+          <legend>Shirt size for your glorious wingspan</legend>
+          <label class="inline"><input type="radio" name="size" value="S" required> S</label>
+          <label class="inline"><input type="radio" name="size" value="M"> M</label>
+          <label class="inline"><input type="radio" name="size" value="L"> L</label>
+          <label class="inline"><input type="radio" name="size" value="XL"> XL</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Event Workshops (choose as many as you can honk through)</legend>
+          <label class="inline"><input type="checkbox" name="ws_html" value="html"> Intro to Honk-Fu</label>
+          <label class="inline"><input type="checkbox" name="ws_css" value="css"> Feather Polishing Techniques</label>
+          <label class="inline"><input type="checkbox" name="ws_js" value="js"> Advanced Bread Throwing</label>
+          <label class="inline"><input type="checkbox" name="ws_capitoline" value="capitoline">Capitoline Geese Re-enactment (Night Watch of Juno)</label>
+        </fieldset>
+
+        <div>
+          <label for="track">Competition Division</label>
+          <select id="track" name="track">
+            <option value="">-- Select your destiny --</option>
+            <option value="rickroll">Rickrolling</option>
+            <option value="dev">Game Dev</option>
+            <option value="security">Hacking (White Feather)</option>
+            <option value="ai">SkyNet</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="bio">Tell us about your honk-journey</label>
+          <textarea id="bio" name="bio" rows="4" placeholder="Share your greatest victory, favorite bread, and training regimen…"></textarea>
+        </div>
+
+        <div class="actions">
+          <input type="reset" value="Reset">
+          <input type="submit" value="Submit Registration">
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; 2025 The Pond. All Rights Reserved.</small>
+  </footer>
+</body>
+</html>
