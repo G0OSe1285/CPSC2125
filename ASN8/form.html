@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive and Accessible Design</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Responsive and Accessible Design</h1>
+    </header>
+
+    <nav aria-label="Primary navigation">
+      <ul class="nav-list">
+        <li><a href="https://www.columbusstate.edu" tabindex="4">CSU Website</a></li>
+        <li><a href="https://www.w3.org/WAI/WCAG21/quickref/" tabindex="5">Web Accessibility Standards</a></li>
+        <li><a href="https://responsivetesttool.com/" tabindex="6">Responsive Web Design Checker</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <form id="frm1">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John" tabindex="1"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe" tabindex="2"><br><br>
+        <input type="submit" value="Submit" tabindex="3">
+      </form>
+    </main>
+
+    <aside>
+        <h2 class="visually-hidden" id="logoTitle">Pixel Cat</h2>
+        <figure aria-labelledby="logoTitle" aria-describedby="logoCaption">
+            <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/44216/pixels-2.svg"
+                alt="Pixels the cat"
+                width="150" height="150"
+                aria-describedby="logoCaption"
+            >
+        <figcaption id="logoCaption" class="visually-hidden">
+            A pixel cat. Not to be mistaken for a Goose.
+        </figcaption>
+        </figure>
+    </aside>
+
+    <footer>
+      <p>Joseph Morgan | Fall 2025</p>
+    </footer>
+
+  </div>
+</body>
+</html>
