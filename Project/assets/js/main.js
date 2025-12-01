@@ -39,7 +39,7 @@ if (bookCarousel) {
     slides[current].classList.add("active");
   }
 
-  slides[0].classList.add("active");  
+  slides[0].classList.add("active");
   setInterval(nextBook, 7000);
 }
 
@@ -50,6 +50,7 @@ function revealOnScroll() {
 
   reveals.forEach((el) => {
     const top = el.getBoundingClientRect().top;
+
     if (top < trigger) {
       el.classList.add("visible");
     }
@@ -57,5 +58,9 @@ function revealOnScroll() {
 }
 
 window.addEventListener("scroll", revealOnScroll);
-window.addEventListener("load", revealOnScroll);
+
+window.addEventListener("load", () => {
+  setTimeout(revealOnScroll, 250);
+});
+
 

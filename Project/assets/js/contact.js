@@ -8,10 +8,19 @@ const errorName = document.getElementById("error-name");
 const errorEmail = document.getElementById("error-email");
 const errorMessage = document.getElementById("error-message");
 
+const subjectInput = document.getElementById("subject");
+const reasonInput = document.getElementById("reason");
+
+const errorSubject = document.getElementById("error-subject");
+const errorReason = document.getElementById("error-reason");
+
+
 function clearErrors() {
   errorName.textContent = "";
   errorEmail.textContent = "";
   errorMessage.textContent = "";
+  errorSubject.textContent = "";
+  errorReason.textContent = "";
 }
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -35,13 +44,22 @@ form.addEventListener("submit", (e) => {
     isValid = false;
   }
 
+    if (subjectInput.value.trim() === "") {
+    errorSubject.textContent = "Please enter a subject.";
+    isValid = false;
+  }
+
+  if (reasonInput.value === "") {
+    errorReason.textContent = "Please select a reason.";
+    isValid = false;
+  }
+
   if (messageInput.value.trim() === "") {
     errorMessage.textContent = "Please enter a message.";
     isValid = false;
   }
 
   if (isValid) {
-    alert("Thank you! Your message has been sent.");
-    form.reset();
-  }
+  form.submit();
+}
 });

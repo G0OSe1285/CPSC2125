@@ -54,7 +54,7 @@
     <section class="card form-card" aria-label="Contact form">
       <h2 class="heading-font">Send a Message</h2>
 
-      <form id="contact-form" novalidate>
+      <form id="contact-form" action="contact-success.html" method="GET" novalidate>
         <div>
           <label for="name">Name</label>
           <input type="text"
@@ -73,6 +73,26 @@
                  placeholder="you@example.com"
                  aria-required="true" />
           <div class="form-error" id="error-email" aria-live="polite"></div>
+        </div>
+
+        <div>
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" />
+          <div id="error-subject" class="form-error"></div>
+        </div>
+
+        <div>
+          <label for="reason">Reason for Contact</label>
+          <select id="reason" name="reason">
+            <option value="">-- Select an option --</option>
+            <option value="general">General Question</option>
+            <option value="book-related">Book Inquiry</option>
+            <option value="events">Events / Appearances</option>
+            <option value="events">Purchase Signed Copy</option>
+            <option value="events">Join Mailing List</option>
+            <option value="other">Other</option>
+          </select>
+          <div id="error-reason" class="form-error"></div>
         </div>
 
         <div>
