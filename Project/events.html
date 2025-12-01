@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Events & News | Joanne Carney</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Latest news, author updates, book signings, and upcoming events." />
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/global.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="brand">
+        <img src="assets/images/logo.jpg"
+             alt="Author logo"
+             class="brand-logo" />
+        <div>
+          <div class="brand-text-main">Joanne Carney</div>
+          <div class="brand-text-sub">Paranormal Romance</div>
+        </div>
+      </div>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+        <span></span><span></span><span></span>
+        <span class="visually-hidden">Toggle navigation</span>
+      </button>
+
+      <nav class="main-nav" id="primary-navigation" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="events.html" aria-current="page">Events</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" aria-labelledby="events-hero-title">
+    <div class="hero-inner" style="grid-template-columns: 1fr;">
+      <div class="hero-text" style="text-align: center; max-width: 760px; margin: 0 auto;">
+        <h1 id="events-hero-title">Events & News</h1>
+        <p style="margin-top: 0.75rem;">
+          Stay informed with book launches, signings, interviews, and important updates from the
+          <strong>Reverie</strong> series.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <main class="wrapper events-main" id="main-content" aria-label="Event listings">
+    <article class="event-item">
+      <h3>Upcoming Release: <em>Immortal Reverie</em></h3>
+      <div class="event-meta">November 18, 2025 &middot; Global Launch</div>
+      <p style="margin-top: 0.35rem;">
+        The third installment in the <strong>Reverie</strong> saga arrives this winter.
+        Preorders open soon and exclusive signed editions will be available.
+      </p>
+    </article>
+
+    <article class="event-item">
+      <h3>Author Q&A Livestream</h3>
+      <div class="event-meta">November 10, 2025 &middot; Online Event</div>
+      <p style="margin-top: 0.35rem;">
+        Join a live discussion on worldbuilding, vampire mythology, and the emotional core of paranormal romance.
+        Audience questions encouraged.
+      </p>
+    </article>
+
+    <article class="event-item">
+      <h3>Book Signing – Atlanta</h3>
+      <div class="event-meta">October 4, 2025 &middot; Starducks Bookshop</div>
+      <p style="margin-top: 0.35rem;">
+        Meet the author in person, get your copies signed.
+      </p>
+    </article>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div class="footer-left">
+        <span>&copy; <span id="copyright-year"></span> Joanne Carney. All rights reserved.</span>
+      </div>
+      <div class="footer-right">
+        <span>Website by Joseph Morgan.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
